@@ -58,13 +58,13 @@ useEffect(()=>{
 
 if(isLoading) return <Spinner/>
   return (
-      <div className='auth-cont m-auto z-50 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
+      <div className='auth-cont mx-auto min-h-screen py-16'>
         <div onClick={handleSwitch} className='switch-box'>
             <div className={`switch show-${showed}`}></div>
         </div>
         
         <div className='authCont'>
-            <div className={`p-y4 bg-gray-800 authCard ${showed==="register" ? "showRegister" :""}`}>
+            <div className={`p-y4 bg-primary-900 authCard ${showed==="register" ? "showRegister" :""}`}>
                 <Login showed={showed} login={subLogin} formData={formData} setFormData={setFormData}/>
                 <Register showed={showed} register={subRegister} formData={formData} setFormData={setFormData}/>
             </div>

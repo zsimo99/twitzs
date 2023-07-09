@@ -4,10 +4,10 @@ import FormControle from "./FormControle"
 const Register = ({formData,setFormData,register,showed}) => {
     
   return (
-    <form onSubmit={register} className="register px-4 space-y-5 text-white">
+    <form onSubmit={register} className="register px-4 space-y-5 text-secondary-200">
         {showed==="register" && (
           <>
-            <h1 className='text-cente my-4 text-center text-white'>Register</h1>
+            <h1 className='my-4 text-xl font-bold text-center text-tertiary-300'>Register</h1>
             <FormControle type="text" id="displayName" name="Dispay Name" value={formData.displayName} setFormData={setFormData}/>
             <FormControle type="text" id="email" name="Email" value={formData.email} setFormData={setFormData}/>
             <FormControle type="password" id="password" name="Password" value={formData.password} setFormData={setFormData}/>
