@@ -18,7 +18,7 @@ const Nav = () => {
       dispatch(logout())
     }
   return (
-    <div className="bg-primary-800 w-full fixed z-20 h-16 flex items-center top-0 left-0 shadow-md text-white">
+    <div className="bg-primary-800 w-full fixed z-50 h-16 flex items-center top-0 left-0 shadow-md text-white">
       <div className="md:flex relative container m-auto px-3 py-2 items-center justify-between">
         <div className=" text-lg">
           <span>TwitZS</span>
